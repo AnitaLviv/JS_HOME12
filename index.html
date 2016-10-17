@@ -1,12 +1,38 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Home-work JS 1</title>
-	<script src="js/script.js"></script>
+  <meta charset="utf-8">
+  <title>Ukrainian poetry</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/tm.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
-	
-</body>
+
+  <script type="text/template" id="about">
+    <div class="wrapper">
+      <h3><%= profile_name %></h3>
+      <div class="foto"><img src="<%= profile_image_url %>" alt="<%= profile_image_alt %>" title="<%= profile_image_title %>"></div>
+      <p><%= profile_poetessa %></p>
+      <p class="info1"><%= profile_idea %></p>
+      <ul>
+        <li><%= profile_idea_1 %></li>
+        <li><%= profile_idea_2 %></li>
+        <li><%= profile_idea_3 %></li>
+      </ul>
+      <p>
+        <span class="info"><%= profile_more_info %></span>
+        <span><%= profile_more_info1 %></span>
+        <span><%= profile_text %></span>
+        <span><a href="<%= profile_link %>" target="_blank"><%= profile_link_text %></a></span>
+        <span class="info2"><%= profile_interest %></span>
+        <span><%= profile_interest_text %></span>
+      </p>
+    </div>
+  </script>
+
+  </body>
 </html>
